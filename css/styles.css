@@ -1,0 +1,609 @@
+/*
+
+font-family: 'Marmelad', sans-serif;
+*/
+
+body{
+    margin: 0;
+    font-family: 'Antonio', sans-serif;
+
+    font-size: 27px;
+    color:#000000;
+    line-height: 1.5;
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+
+/*Button*/
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    background: #0085FF;
+    border-radius: 7px;
+    padding: 1px 55px 9px 55px;
+
+    text-decoration: none;
+    color:#ffffff;
+
+    font-size: 27px;
+    line-height: 148%;
+    text-align: center; 
+
+    transition: background-color 0.2s linear;
+}
+
+.btn span{
+    margin-left: 5px;
+}
+
+
+.btn:hover, .call-button:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #006fd8;
+}
+
+.btn:active, .call-button:active{
+    background-color: #0078e9;
+    box-shadow: 0 0 0 3px #000000;
+}
+
+.fa-phone{
+    transition: color 0.2s linear;
+}
+
+.fa-phone:hover{
+    color: #608c51;
+}
+
+/*Container*/
+.container{
+    width: 100%;
+    max-width: 1303px;
+    margin: 0 auto ;
+    
+}
+
+
+/*Header*/
+
+.header{
+    width: 100%;
+    padding-top:  117px;
+    padding-bottom: 21px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 30px;
+    
+}
+
+.header-logo{
+    display: block;
+    position: relative;
+
+    margin-right: auto;
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-logo-text{
+
+    display: block;
+    font-size: 72px;
+    line-height: 1.3;
+    -webkit-text-stroke: 2px #000000;
+    
+    padding-left:135px;
+    
+}
+
+.header-logo-text::after{
+
+    content: "медичний центр";
+    display: block;
+    width: 100%;
+    height: auto;
+
+    font-size: 24px;
+    line-height: 1.29;
+    opacity: 0.75;
+    -webkit-text-stroke:0;
+    text-align: center;
+
+    padding-top: 3px;
+}
+
+
+.header-logo img{
+    display: block;
+    position: absolute;
+
+    bottom: 45px;
+    left: 0;
+    z-index: 1000;
+}
+
+
+.header-tel{
+    font-size: 50px;
+    transform: translateY(-6px);
+
+    
+}
+
+.header-tel-icon{
+    display:inline-block;
+    vertical-align: top;
+    font-size:43px ;
+    color: #78BC61;
+    transform: translateY(4px);
+
+}
+
+.header-lang{
+    display: block;
+    transform: translateY(-9px);
+    margin-left: 82px;
+    text-decoration: none;
+
+}
+
+.header-lang-text{
+    margin-top: -4px;
+    
+    color:#000000;
+    font-family: 'Marmelad', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+    
+}
+
+.header-lang img{
+    transition: box-shadow 0.2s linear;
+
+}
+
+.header-lang:hover{
+    text-decoration: underline;    
+}
+
+.header-lang:hover img{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.nav{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 28px;
+    margin-left: -3px;
+}
+
+.nav-link{
+    color:#000000;
+    text-decoration: none;
+    margin-right: 25px;
+
+    opacity: 0.75;
+    transition: opacity .2s linear;
+}
+
+.nav-link:hover{
+    opacity: 1;
+    text-decoration: underline;
+
+}
+
+/*Intro*/
+
+.intro{
+    width: 100%;
+    height: auto;
+    background-color: #F6F8FA;
+
+}
+
+.intro-iner{
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 0;
+}
+
+
+.intro-right{
+    width:100%;
+    max-width: 500px;
+    margin-right: 25px;
+}
+
+.intro-right-title{
+    font-family: 'Marmelad', sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 109%;
+
+    padding-top: 13px;
+}
+
+.intro-right-text{
+    font-size: 27px;
+    line-height: 148%; 
+    opacity: 0.8;    
+    
+    margin-top: 30px;
+}
+
+.intro-iner img{
+    width: 100%;
+    max-width: 630px;
+    height: 100%;
+
+    
+}
+
+
+
+/*Benefits*/
+
+.benefits{
+    padding: 83px 0;
+}
+
+.benefits-list{
+    display:flex;
+    justify-content: space-between;
+
+    margin-top:83px;
+}
+
+.benefits-item{
+    width: 289px;
+    text-align: center;
+}
+
+.benefits-item:first-child{
+    margin-left: -32px;
+}
+
+.benefits-item:last-child{
+    margin-right: -32px;
+}
+
+.benefits-item img{
+    margin-bottom:10px;
+}
+
+.benefit-title{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.benefit-text{
+    display: inline-block;
+    font-size: 25px;
+    line-height: 112%;
+
+    padding: 0 11px;
+    opacity: 0.8;
+}
+
+
+
+
+/*Section*/
+
+.section-header{
+    text-align: center;
+}
+
+.section-title{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 125%;
+}
+
+.section-text{
+    font-size: 27px;
+    line-height: 107%;  
+
+    opacity: 0.8;
+
+    padding: 0 60px;
+}
+
+
+/*Advertises*/
+
+.advertises{
+    margin-top:170px;
+    padding-bottom: 78px;
+}
+
+.advertise{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.advertise:first-child{
+    margin-bottom: 208px;
+}
+
+.advertise-info{
+    width:100%;
+    max-width: 500px;
+    margin-top: -23px;
+}
+
+.advertise-info:last-child{
+    margin-right: -20px;
+}
+
+.advertise-title{
+    font-family: 'Marmelad', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 125%;
+
+    margin-left: -2px;
+}
+
+.advertise-text{
+    margin-top: 29px;
+
+    font-size: 27px;
+    line-height: 148%;  
+
+    opacity: 0.8;
+}
+
+.advertise img{
+    width:100%;
+    max-width: 710px;
+    height: 100%;
+
+    
+}
+
+
+
+/*Statistic*/
+
+
+.statistic{
+    background-color: #F6F8FA;
+    padding: 72px 0 74px 0;
+}
+
+.stat{
+    margin-top: 86px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item{
+    text-align: center;
+}
+
+.stat-item:first-child{
+    margin-left: -4px;
+}
+
+.stat-item:last-child{
+    margin-right: -13px;
+}
+
+.stat-title{
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1;
+
+}
+
+.stat-text{
+    font-size: 25px;
+    line-height: 112%;
+
+    opacity: 0.6;
+
+    width:100%;
+    max-width: 186px;
+    margin:21px auto 0 auto;
+}
+
+
+
+/*Partners*/
+
+.partners{
+    padding-top: 160px;
+    padding-bottom: 133px;
+}
+
+.partners-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.partners-item{
+    width: 100%;
+    height: 100%;
+}
+
+.partners-item:first-child{
+    max-width: 200px;
+    margin-left:-3px;
+}
+
+.partners-item:nth-child(2){
+    max-width: 289px;
+    transform: translateY(5px);
+}
+
+.partners-item:nth-child(3){
+    max-width: 219px;
+    transform: translateY(20px);
+}
+
+.partners-item:last-child{
+    max-width: 360px;
+    transform: translateY(10px);
+}
+
+
+
+/*Call*/
+
+.call-iner{
+    display:flex;
+    padding: 130px 0;
+}
+
+.call-numbers{
+    font-size: 64px;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.call-numbers i{
+    display:inline-block;
+    vertical-align: center;
+    font-size:57px ;
+    color: #78BC61;
+    transform: translateY(-5px);
+}
+
+
+.call-form{
+    max-width: 431px;
+    width: 100%;
+}
+
+.call-input{   
+    width:100%; 
+    border:0;
+    font-family: 'Antonio', sans-serif;
+    font-size: 64px;
+
+    margin-bottom: 42px;
+}
+
+.call-input::placeholder{
+    color:#000000;
+}
+
+.call-input:focus{
+    outline: 0;
+}
+
+.call-button{
+    display: block;
+
+    width: 100%;
+    height: 69px;
+    border:0;
+    cursor:pointer;
+
+    background: #0085FF;
+    border-radius: 7px;
+    padding: 1px 0 9px 0;
+
+    color:#ffffff;
+
+    font-family: 'Antonio', sans-serif;
+    font-size: 27px;
+    line-height: 148%;
+    text-align: center; 
+}
+
+.number:last-child{
+    margin-top: 20px;
+}
+
+
+
+/*Footer*/
+
+.footer{
+    background-color: #E5E5E5;
+}
+
+
+.footer-iner{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    padding: 41px 0;
+}
+
+.footer-name{
+    font-size: 18px;
+}
+
+.footer-text{
+    font-size: 16px;
+}
+
+.footer-text-right{
+    text-align: end;
+}
+
+.footer-link{
+    display: inline-block;
+
+    text-decoration: none;
+    color:#000000;
+    font-size: 16px;
+    line-height: 1;
+    vertical-align: top;
+    margin-top:5px;
+    margin-right: 20px;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.footer-icons{
+    display: inline-block;
+
+    text-decoration: none;
+    color:#000000;
+    font-size: 20px;
+    vertical-align: top;
+    margin-top:-3px;
+    margin-right: 5px;
+}
+
+.footer-icons:hover{
+    color: #0085FF ;
+}
+
+
+
+@media (max-width: 1200px){
+   
+}
