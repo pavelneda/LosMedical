@@ -354,7 +354,7 @@ h1, h2, h3, h4, h5, h6{
 
 .advertise:first-child{
     margin-bottom: 208px;
-    padding-top: 10px
+    padding-top: 20px
 }
 
 .advertise-info{
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6{
     width:100%;
     max-width: 710px;
     height: 100%;
-
+    border-radius: 10px;
     
 }
 
@@ -412,6 +412,7 @@ h1, h2, h3, h4, h5, h6{
 
 .stat-item{
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .stat-item:first-child{
@@ -457,26 +458,35 @@ h1, h2, h3, h4, h5, h6{
 
 
 .partners-item{
-    width: 100%;
-    height: 100%;
+    margin-right: 45px;
+
 }
 
-.partners-item:first-child{
+.partners-item:last-child{
+    margin-right: 0;
+}
+
+.partners-item img{
+    width: 100%;
+    height: auto;
+}
+
+.partners-item:first-child img{
     max-width: 200px;
     margin-left:-3px;
 }
 
-.partners-item:nth-child(2){
+.partners-item:nth-child(2) img{
     max-width: 289px;
     transform: translateY(5px);
 }
 
-.partners-item:nth-child(3){
+.partners-item:nth-child(3) img{
     max-width: 219px;
     transform: translateY(20px);
 }
 
-.partners-item:last-child{
+.partners-item:last-child img{
     max-width: 360px;
     transform: translateY(10px);
 }
@@ -517,7 +527,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Antonio', sans-serif;
     font-size: 64px;
 
-    margin-bottom: 42px;
+    margin-bottom: 49px;
 }
 
 .call-input::placeholder{
@@ -700,7 +710,155 @@ h1, h2, h3, h4, h5, h6{
         padding: 110px 0;
     }
 
+    
+    /*Benefits*/
+
+    .section-title {
+        font-size: 35px;
+    }
+
+    .section-text {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .benefit-title {
+        font-size: 25px;
+    }
+
+    .benefit-text {
+        font-size: 22px;
+        line-height: 1.15;
+        padding: 0 15px;
+    }
+
+
+    .benefits-item:first-child {
+        margin-left: -20px;
+    }
+
+    .benefits-item:last-child {
+        margin-right: -42px;
+    }
+
+    
+
+    /*Advertises*/
+
+    .advertises{
+        margin-top:60px;
+    }
+
+    .advertise-title{
+        font-size: 35px;
+    }
+
+    .advertise-text{
+        font-size: 24px;
+
+    }
+
+    .advertise-info {
+        margin-top: -13px;
+    }
+
+    .advertise img {
+        max-width: 500px;
+    }
+
+    .advertise:first-child img{
+        margin-left: 35px;
+    }
+
+    .advertise:last-child img{
+        margin-right: 35px;
+    }
+
+    .advertise:first-child {
+        margin-bottom: 133px;
+    }
+
+    .advertise-info:last-child {
+        margin-right: 0;
+    }
+
+    .btn{
+        font-size: 24px;
+    }
+
+
+
+    /*Statistic*/
+
+    .statistic{
+        padding: 62px 0 44px 0;
+    }
+
+    .stat{
+        margin-bottom: 56px;
+    }
+
+    .stat-item:last-child {
+        margin-right: -26px;
+    }
+
+    .stat-title {
+        font-size: 60px;
+    }
+
+    .stat-text {
+        font-size: 22px;
+        line-height: 1.15;
+    }
+
+
+
+
+    /*Partners*/
+
+    .partners {
+        padding-top: 100px;
+        padding-bottom: 63px;
+    }
+    
+
+
+
+    /*Call*/
+
+    .call-numbers {
+        font-size: 47px;
+    }
+
+    .call-numbers i{
+        font-size:42px ;
+    }
+
+    .call-input {
+        font-size: 47px;
+        margin-bottom: 42px;
+    }
+
+    .call-button {
+        height: 55px;
+        font-size: 24px;
+    }
+
+    .call-form{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .call-iner{
+        padding: 92px 0;
+    }
+
+
+
+
 }
+
+
 
 
 
@@ -714,6 +872,52 @@ h1, h2, h3, h4, h5, h6{
         line-height: 135%;
     }
 
+    /*Advertises*/
+
+    .advertise-text{
+        margin-top: 5px;
+        line-height: 135%;
+    }
+
+
+    /*Partners*/
+
+    .partners-item:nth-child(2) img {
+        transform: translateY(3px);
+    }
+
+    .partners-item:nth-child(3) img {
+        transform: translateY(12px);
+    }
+
+    .partners-item:last-child img {
+        transform: translateY(3px);
+    }
+
+
+    /*Footer*/
+
+    .footer-iner{
+        flex-wrap: wrap;
+    }
+
+    .footer-item{
+        width: 50%;
+    }
+
+    .footer-item:nth-child(2){
+        order:1;
+    }
+
+    .footer-item:nth-child(3){
+        order:1;
+        text-align: end;
+    }
+
+    .footer-item:nth-child(4){
+        margin-bottom: 10px;
+        text-align: end;
+    }
 
 }
 
@@ -756,6 +960,155 @@ h1, h2, h3, h4, h5, h6{
         margin-right: -45px;
     }
 
+    /*Benefits*/
+
+    .benefits-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-item:first-child {
+        margin-left: 0;
+    }
+
+    .benefits-item:last-child {
+        margin-right: 0;
+    }
+
+    .benefits-item {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .benefit-text{
+        display:block;
+        padding: 0 60px;
+    }
+
+    .section-text{
+        padding: 0;
+        line-height: 1.15;
+    }
+
+    
+    
+    /*Advertises*/
+
+    .advertise{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .advertise:last-child{
+        flex-direction: column;
+    }
+
+    .advertise:first-child img{
+        margin-left: 0;
+    }
+
+    .advertise:last-child img{
+        margin-right: 0;
+    }
+
+    .advertise-info {
+        margin-top: 35px;
+    }
+
+    .advertise img {
+        max-width: 710px;
+    }
+
+    .advertise-info {
+        max-width: 710px;
+    }
+
+    .advertise-text {
+        line-height: 148%;
+    }
+
+    .advertises {
+        margin-top: 0px;
+    }
+
+
+
+    /*Statistic*/
+
+    .statistic{
+        padding-bottom: 0;
+    }
+
+    .stat{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .stat-item{
+        width: 50%;
+        margin-bottom: 80px;
+    }
+
+    .stat-item:first-child{
+        margin-left: 0;
+    }
+
+    .stat-item:last-child{
+        margin-right: 0;
+    }
+
+
+    /*Partners*/
+
+    .partners-list{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .partners-item{
+        width: 50%;
+        margin: 0;
+        text-align: center;
+        
+    }
+
+    .partners-item:nth-child(2n-1){
+        padding-right: 40px;
+    }
+
+    .partners-item:nth-child(2n){
+        padding-left: 40px;
+    }
+
+    .partners-item:last-child img {
+        object-fit: cover;
+        max-width: 340px;
+        max-height: 200px;
+    }
+
+    .partners-item:nth-child(3) img {
+        transform: translateY(8px);
+    }
+
+
+    /*Call*/
+
+    .call-iner{
+        flex-direction: column;
+    }
+
+    .call-form{
+        margin-bottom: 80px;
+    }
+
+    .number:last-child {
+        margin-top: 7px;
+    }
+
+    .call-input {
+        margin-bottom: 30px;
+    }
+    
 }
 
 
@@ -812,6 +1165,139 @@ h1, h2, h3, h4, h5, h6{
     .intro-iner img {
         max-width: 550px;
     }
+
+
+    /*Benefits*/
+    .benefits{
+        padding-bottom: 55px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-text {
+        font-size: 22px;
+    }
+
+    .benefit-title {
+        font-size: 23px;
+    }
+
+    .benefit-text {
+        font-size: 21px;
+    }
+
+    /*Advertises*/
+
+    
+    .advertise-title {
+        font-size: 32px;
+    }
+
+    .advertise-text {
+        font-size: 22px;
+    }
+
+
+    .btn{
+        font-size: 22px;
+    }
+
+    .advertise:first-child {
+        margin-bottom: 100px;
+    }
+
+
+    /*Statistic*/
+
+    .stat{
+        margin-top: 46px;
+    }
+    
+    .stat-title{
+        font-size: 46px;
+    }
+
+    .stat-text{
+        font-size: 20px;
+        padding: 0 3px;
+    }
+
+    .stat-item{
+        margin-bottom: 40px;
+    }
+
+    /*Partners*/
+
+    .partners {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
+
+    /*Call*/
+
+    .call-numbers {
+        font-size: 43px;
+    }
+    
+    .call-input{
+        font-size: 43px;
+    }
+
+    .call-form {
+        max-width: 290px;
+        margin-bottom: 50px;
+
+    }
+
+    .call-button {
+        height: 52px;
+        font-size: 22px;
+        margin-left: 3px;
+    }
+
+    .call-iner {
+        padding: 62px 0;
+    }
+
+
+    
+    .call-numbers i{
+        font-size:37px ;
+    }
+
+
+    /*Footer*/
+
+    .footer-item{
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .footer-item:nth-child(1){
+        margin-bottom: 10px;    
+    }
+
+    .footer-item:nth-child(3){
+        order:-1;
+        text-align: center;
+    }
+
+    .footer-item:nth-child(4){
+        text-align: center;
+        order: 2;
+    }
+
+    .footer-text-right{
+        text-align: center;
+    }
+
+    .footer-iner{
+        padding: 20px 0;
+    }
 }
 
 
@@ -860,7 +1346,101 @@ h1, h2, h3, h4, h5, h6{
     }
 
 
+    /*Benefits*/
 
+    .benefits {
+        padding: 55px 0;
+    }
+
+    .benefits-item{
+        margin-bottom: 53px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-text {
+        font-size: 20px;
+    }
+
+    .benefit-title {
+        font-size: 21px;
+    }
+
+    .benefit-text {
+        font-size: 19px;
+    }
+    
+    /*Advertises*/
+
+    .advertises {
+        padding-bottom: 58px;
+    }
+
+    .advertise-title {
+        font-size: 28px;
+    }
+
+    .advertise-text {
+        font-size: 20px;
+    }
+
+    .btn{
+        font-size: 20px;
+        padding: 4px 35px 9px 35px;
+    }
+
+    .advertise:first-child {
+        padding-top: 0px;
+    }
+
+
+    /*Partners*/
+
+    .partners-list {
+        padding-top: 10px;
+    }
+
+    .partners-item:nth-child(2n-1){
+        padding-right: 20px;
+    }
+
+    .partners-item:nth-child(2n){
+        padding-left: 20px;
+    }
+
+
+    /*Call*/
+
+    .call-numbers {
+        font-size: 39px;
+    }
+
+    
+    .call-input{
+        font-size: 39px;
+    }
+
+    .call-form {
+        max-width: 263px;
+    }
+
+    .call-button {
+        height: 51px;
+        font-size: 21px;
+        margin-left: 3px;
+    }
+
+    .call-iner {
+        padding-top: 42px;
+    }
+
+    .call-numbers i{
+        font-size:34px ;
+        transform: translateY(-4px);
+
+    }
 }
 
 
@@ -905,4 +1485,142 @@ h1, h2, h3, h4, h5, h6{
         margin-bottom: 23px;
     }
 
+    .intro-iner img {
+        margin-right: -23px;
+    }
+
+    /*Benefits*/
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-text {
+        font-size: 18px;
+        line-height: 1.27;
+    }
+
+    .benefit-title {
+        font-size: 19px;
+    }
+
+    .benefit-text {
+        font-size: 18px;
+        padding: 0 15px;
+        line-height: 1.27;
+
+    }
+
+    .benefits-item img {
+        max-width: 100px;
+    }
+
+    .benefits-list {
+        margin-top: 60px;
+    }
+
+    .benefits-item {
+        margin-bottom: 40px;
+    }
+
+
+    /*Advertises*/
+
+    .advertises {
+        padding-bottom: 50px;
+    }
+
+    .advertise-title {
+        font-size: 24px;
+    }
+
+    .advertise-text {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-top: 10px;
+
+    }
+
+    .advertise:first-child {
+        margin-bottom: 85px;
+    }
+
+
+    /*Statistic*/
+
+    .stat {
+        margin-top: 35px;
+    }
+
+    .statistic{
+        padding-top: 32px;
+    }
+
+    .stat-item{
+        width: 100%;
+        margin-bottom: 25px;
+
+    }
+
+    .stat-title {
+        font-size: 36px;
+    }
+
+    .stat-text{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+    .stat-item:last-child {
+        margin-bottom: 35px;
+    }
+
+
+    /*Partners*/
+
+    .partners {
+        padding-top: 40px;
+        padding-bottom: 65px;
+    }
+
+    .partners-item:last-child img {
+        max-height: 80px;
+    }
+
+    /*Call*/
+
+    .call-numbers {
+        font-size: 36px;
+    }
+
+    .call-numbers i{
+        font-size:31px ;
+        transform: translateY(-4px);
+
+    }
+
+    .call-input{
+        font-size: 36px;
+        margin-bottom: 20px;
+
+    }
+
+    .call-form {
+        max-width: 245px;
+    }
+
+    .call-button {
+        height: 49px;
+        font-size: 20px;
+        margin-left: 3px;
+        padding-top: 3px;
+    }
+
+}
+
+
+@media(max-width:350px){
+    .call-numbers i{
+        display: none;
+    }
 }
