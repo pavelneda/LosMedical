@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Marmelad&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/eb125d246d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>LosMedical</title>
 </head>
@@ -26,7 +25,7 @@
 
             
             <div class="header-tel">
-                <a class="header-tel-icon" href="#"><i class="fa-solid fa-phone"></i></a>
+                <a class="header-tel-icon" href="tel:+380982284569"><i class="fa-solid fa-phone"></i></a>
                 <span class="header-tel-text">+38 098 228 45 69</span>
             </div>
 
@@ -39,13 +38,14 @@
             </a>
 
             <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
+            <div class="cross"><i class="fa-solid fa-xmark"></i></div>
             
         </div>
 
         <nav class="nav">
             <a href="#" class="nav-link">Головна</a>
-            <a href="#" class="nav-link">Наші лікарі</a>
-            <a href="#" class="nav-link">Контакти</a>
+            <a href="doctors.html" class="nav-link">Наші лікарі</a>
+            <a href="contacts.html" class="nav-link">Контакти</a>
         </nav>
 
     </div>  <!--/.container-->
@@ -116,7 +116,7 @@
                 <p class="advertise-text">В епоху пандемії ви повністю можете довіритись нам, тому що у нас один з найвищих відсотків одужання в Європі. Це забезпечують досвідчені лікарі та нове обладнання з США.
                 </p>
 
-                <a href="" class="btn"><i class="fa fa-hand-point-right"></i><span>Стати клієнтом</span></a>
+                <a class="btn scroll-btn"><i class="fa fa-hand-point-right"></i><span>Стати клієнтом</span></a>
             </div>
 
             <img src="images/covid-19.png" alt="">
@@ -132,7 +132,7 @@
                 <p class="advertise-text">Весь персонал відповідає європейським стандартам. Багато наших лікарів мають вчені ступені. Ми надаємо найкращі умови праці, через те до нас ідуть накращі спеціалісти.
                 </p>
 
-                <a href="#" class="btn"><i class="fa fa-hand-point-right"></i><span>Зателефонувати</span></a>
+                <a class="btn scroll-btn"><i class="fa fa-hand-point-right"></i><span>Зателефонувати</span></a>
             </div>
         </div>
 
@@ -209,11 +209,11 @@
 
             <div class="call-numbers">
                 <div class="number">
-                    <a  href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a  href="tel:+380982284569"><i class="fa-solid fa-phone"></i></a>
                     +380 (098) 228 45 69
                 </div>
                 <div class="number">
-                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="tel:+380983450277"><i class="fa-solid fa-phone"></i></a>
                     +380 (098) 345 02 77
                 </div>
             </div>
@@ -235,8 +235,8 @@
 
             <div class="footer-item">
                 <a class="footer-link" href="#">Головна</a>
-                <a class="footer-link" href="#">Наші лікарі</a>
-                <a class="footer-link" href="#">Контакти</a>
+                <a class="footer-link" href="doctors.html">Наші лікарі</a>
+                <a class="footer-link" href="contacts.html">Контакти</a>
             </div>
 
             <div class="footer-item">
@@ -258,6 +258,20 @@
     </div><!--/.container-->
 </footer><!--/.footer-->
 
+
+<script src="js/javascripts.js"></script>
+<!--jquery for input mask-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/eb125d246d.js" crossorigin="anonymous"></script>
+<!-- load maskedinput.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js" integrity="sha512-yVcJYuVlmaPrv3FRfBYGbXaurHsB2cGmyHr4Rf1cxAS+IOe/tCqxWY/EoBKLoDknY4oI1BNJ1lSU2dxxGo9WDw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--input mask script-->
+<script type="text/javascript">
+    jQuery(function($){
+    $("#number").mask("+380 (999) 999 99 99");
+    });
+ </script>
 
 </body>
 </html>
